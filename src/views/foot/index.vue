@@ -1,6 +1,8 @@
 <template>
   <div>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
     <nav class="footer">
       <router-link
         v-for="(item, index) in list"

@@ -1,7 +1,7 @@
 <template>
   <div class="classifi">
     <div class="wrap">
-      <a href="javascript:;">搜索校园超市商品</a>
+      <a href="javascript:;" @click="search">搜索校园超市商品</a>
     </div>
     <div class="main">
       <tab-nav 
@@ -56,6 +56,10 @@ export default {
     this.productPage.page += 1
   },
   methods: {
+    search () {
+      this.$router.push('/search')
+    },
+
     async fetchcategory () {
       const res = await this.$api.product.category()
       this.leftNav = res.data
