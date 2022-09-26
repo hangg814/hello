@@ -8,6 +8,7 @@ import tabNav from './components/tabNav'
 import productList from './components/productList'
 import labels from './components/labels'
 import card from './components/card'
+import searchBar from './components/searchBar'
 
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
@@ -26,6 +27,7 @@ Vue.component('productList', productList)
 Vue.component('labels', labels)
 
 Vue.component('card', card)
+Vue.component('searchBar', searchBar)
 
 new Vue({
   router,
