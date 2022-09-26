@@ -26,6 +26,7 @@ export default {
       val: ''
     }
   },
+  
   watch: {
     val () {
       this.$emit('search', this.val)
